@@ -3,17 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-color: gray;
-}
+} */
+ .wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+ }
 .parent{
-    height: 94vh;
+    /* height: 94vh; */
+    flex-grow: 1;
     width: 100%;
     background-color: gray;
     display: grid;
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(3,100px);
     place-content: center;
+    border: solid 2px red;
 }
 .boxes{
     background-color: violet;
@@ -43,7 +50,7 @@ body{
 }
 .btn{
     position: fixed;
-    bottom: 17%;
+    bottom: 14%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(216, 112, 147);
@@ -62,4 +69,5 @@ body{
 .heading{
     text-align: center;
     background-color: gray;
+    padding-top: 20px;
 }
